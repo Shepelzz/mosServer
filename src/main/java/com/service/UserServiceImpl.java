@@ -33,4 +33,14 @@ public class UserServiceImpl implements UserService{
 
         return userAccount;
     }
+
+    @Override
+    public int changeCoins(String userName, int val) {
+        Account account = storage.getRecord(userName);
+        account.setCoins(account.getCoins()+val);
+
+        storage.setRecord(userName, account);
+        return account.getCoins();
+    }
+
 }
