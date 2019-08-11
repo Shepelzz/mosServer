@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .container {margin: 20px;clear:both;border: solid 1px;}
+        textarea {width: 100%;height: 150px;padding: 12px 20px;box-sizing: border-box;
+                border: 2px solid #ccc;border-radius: 4px;background-color: #f8f8f8;}
+        input[type=text] {width: 100%;padding: 12px;border: 1px solid #ccc;
+                            border-radius: 4px;resize: vertical;}
+        .label {padding: 5px 0 0 0;margin: 0;display: inline-block;color: #8e8e8e;}
+        input[type=submit] {background-color: #8e8e8e;color: white;padding: 13px 20px;
+                            border: none;border-radius: 4px;cursor: pointer;
+                            float: right;width: 80%;}
+        input[type=submit]:hover {background-color: #1383e0;}
+        .container {border-radius: 5px;border: #cccccc;background-color: #f2f2f2;
+                    padding: 8px;width: 600px;}
+        .col-25 {float: left;width: 25%;margin-top: 6px;}
+        .col-75 {float: left; width: 75%; margin-top: 6px;}
+        .row:after {content: ""; display: table; clear: both;}
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <span class="label">Logout by Authorization Id</span>
+    <form action="/action_page.php">
+        <div class="row">
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Authorization id">
+            </div>
+            <div class="col-25">
+                <input type="submit" value="Logout">
+            </div>
+        </div>
+    </form>
+</div>
+<div class="container">
+    <span class="label">Logout by Token Id</span>
+    <form action="/action_page.php">
+        <div class="row">
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Token id">
+            </div>
+            <div class="col-25">
+                <input type="submit" value="Logout">
+            </div>
+        </div>
+    </form>
+</div>
+<div class="container">
+    <span class="label">Refresh Token</span>
+    <form action="/action_page.php">
+        <div class="row">
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Authorization id">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Refresh Token">
+            </div>
+            <div class="col-25">
+                <input type="submit" value="Refresh">
+            </div>
+        </div>
+    </form>
+</div>
+
+<textarea>sdfadf</textarea>
+
+</body>
+</html>
